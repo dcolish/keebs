@@ -14,6 +14,17 @@ Use [Safe
 Mode](https://learn.adafruit.com/adafruit-macropad-rp2040/circuitpython#safe-mode-3097754)
 to recover your board.
 
+## Serial port
+
+### Connecting
+TODO:figure out why it needs sudo
+
+`sudo cu -l /dev/tty.usbmodem1101`
+
+### Clearing hung port
+
+`ps -lt tty.usbmodem1101` to find hung pid
+
 ## Runtime env
 
 See https://learn.adafruit.com/scrolling-countdown-timer/create-your-settings-toml-file
@@ -35,9 +46,25 @@ thumbs_up="\U0001f44d"
 https://docs.circuitpython.org/projects/macropad/en/latest/examples.html
 
 [Macropad API reference](https://docs.circuitpython.org/projects/macropad/en/latest/api.html#adafruit_macropad.MacroPad)
+[MacroPad Source](https://github.com/adafruit/Adafruit_CircuitPython_MacroPad/tree/main)
 
 [Display](https://docs.circuitpython.org/projects/display_text/en/latest/)
 [HID Ref](https://docs.circuitpython.org/projects/hid/en/latest/)
+
+[Code Search](https://github.com/adafruit/circuitpython#code-search)
+
+### REPL
+
+From the REPL you can `import code`
+
+```py
+# Code done running.
+
+# Press any key to enter the REPL. Use CTRL-D to reload.
+
+# Adafruit CircuitPython 8.1.0-beta.2 on 2023-04-26; Adafruit Macropad RP2040 with rp2040
+>>> import code
+```
 
 ### Interesting folders in the repo
 
