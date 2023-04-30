@@ -200,7 +200,7 @@ class RadPad:
                 self.stop_tone()
 
         self.macropad.encoder_switch_debounced.update()
-        if self.macropad.encoder_switch_debounced.pressed:
+        if self.macropad.encoder_switch_debounced.pressed: # type: ignore
             self.macropad.consumer_control.send(self.macropad.ConsumerControlCode.MUTE)
 
         self.rot_pos, ev = self.get_volume_event(self.rot_pos, self.macropad.encoder)
