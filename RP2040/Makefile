@@ -1,5 +1,6 @@
 
-DST=/Volumes/CIRCUITPY
+DST=/mnt/circuitpy
+#DST=/Volumes/CIRCUITPY
 
 all: push
 
