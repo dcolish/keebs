@@ -1,9 +1,3 @@
-# SPDX-FileCopyrightText: Copyright (c) 2021 Kattni Rembor for Adafruit Industries
-#
-# SPDX-License-Identifier: Unlicense
-"""
-MacroPad display image demo. Displays a bitmap image on the built-in display.
-"""
 import os
 import random
 import time
@@ -20,7 +14,7 @@ VERBOSE_1 = 9
 
 logger = logging.getLogger(__name__)
 # [LEVELS](https://github.com/adafruit/Adafruit_CircuitPython_Logging/blob/5.2.1/adafruit_logging.py#L103)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.DEBUG) # type: ignore - global namespace fiddling occurs...
 
 
 NUM_KEYS = 12

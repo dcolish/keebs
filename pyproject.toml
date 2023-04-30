@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "keebs"
+version = "0.1.0"
+description = "Keebs and bit"
+authors = ["Dan Colish <dcolish@gmail.com>"]
+license = "AGPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+adafruit-circuitpython-macropad = "^2.1.8"
+adafruit-circuitpython-logging = "^5.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
